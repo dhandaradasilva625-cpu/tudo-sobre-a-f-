@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhandara ✨</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fff6ef;
+    --bg-alt: #ffe9d6;
+    --text: #4a3b2f;
+    --text-soft: #8a7768;
+    --accent: #e08a45;
+    --accent-3: #c96b8f;
+    --card-bg: #ffffff;
+    --border: #f2ddc8;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #241d17; --bg-alt: #2e2519; --text: #f5ece1;
+      --text-soft: #cbb8a4; --card-bg: #2d251e; --border: #453a2c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #241d17; --bg-alt: #2e2519; --text: #f5ece1;
+    --text-soft: #cbb8a4; --card-bg: #2d251e; --border: #453a2c;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+  }
+  header {
+    text-align: center;
+    padding: calc(3rem + env(safe-area-inset-top, 0px)) 1.25rem 2.5rem;
+    background: linear-gradient(180deg, var(--bg-alt), var(--bg));
+  }
+  h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    margin: 0 0 0.4rem;
+    color: var(--accent);
+  }
+  .tagline { color: var(--text-soft); font-size: 1.1rem; margin: 0; }
+  section { max-width: 680px; margin: 0 auto; padding: 2.5rem 1.25rem; }
+  section h2 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .tag {
+    display: inline-block;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    margin: 0.2rem 0.3rem 0.2rem 0;
+    font-weight: 600;
+  }
+  footer {
+    text-align: center;
+    padding: 2rem 1rem calc(2rem + env(safe-area-inset-bottom, 0px));
+    color: var(--text-soft);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Oi, eu sou a Dhandara! 🌻</h1>
+  <p class="tagline">Sou de Oxum e Ogum</p>
+</header>
+
+<section>
+  <h2>Minha fé 🌊⚔️</h2>
+  <div class="card">
+    <p>Sou de Oxum e Ogum — eles são meus pais de cabeça. As religiões de matriz africana, como o Candomblé e a Umbanda, fazem parte de quem eu sou. Oxum representa o amor, a doçura e as águas doces; Ogum representa a força, a coragem e a luta pela justiça. Carregar os dois me ensina a ser gentil sem deixar de ser forte.</p>
+  </div>
+  <div class="card">
+    <p>Infelizmente, essas religiões ainda sofrem muito preconceito e desinformação. Elas não têm nada a ver com o que muita gente imagina por aí — são religiões de amor, ancestralidade, respeito à natureza e à comunidade. Fazem parte da cultura e da história do Brasil, e merecem ser respeitadas como qualquer outra fé.</p>
+    <div>
+      <span class="tag">Oxum</span>
+      <span class="tag">Ogum</span>
+      <span class="tag">Ancestralidade</span>
+      <span class="tag">Respeito</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Feito com carinho por Dhandara 🌻
+</footer>
+
+</body>
+</html>
