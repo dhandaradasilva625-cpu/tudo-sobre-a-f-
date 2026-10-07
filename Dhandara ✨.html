@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dhandara ✨</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#fff6ef; --bg-alt:#ffe9d6; --text:#4a3b2f; --text-soft:#8a7768;
+    --accent:#e08a45; --accent-2:#3f8f8a; --accent-3:#c96b8f;
+    --card-bg:#ffffff; --border:#f2ddc8;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#241d17; --bg-alt:#2e2519; --text:#f5ece1; --text-soft:#cbb8a4;
+      --card-bg:#2d251e; --border:#453a2c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#241d17; --bg-alt:#2e2519; --text:#f5ece1; --text-soft:#cbb8a4;
+    --card-bg:#2d251e; --border:#453a2c;
+  }
+  *{box-sizing:border-box}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:'Nunito',system-ui,sans-serif;line-height:1.6}
+  header{text-align:center;padding:calc(3rem + env(safe-area-inset-top,0px)) 1.25rem 2.5rem;background:linear-gradient(180deg,var(--bg-alt),var(--bg))}
+  h1,h2,h3{font-family:'Fredoka',system-ui,sans-serif}
+  h1{font-size:clamp(2rem,6vw,2.8rem);margin:0 0 .4rem;color:var(--accent)}
+  .tagline{color:var(--text-soft);font-size:1.1rem;margin:0 auto;max-width:520px}
+  nav{margin-top:1.25rem;display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap}
+  nav a{color:var(--text);text-decoration:none;font-weight:700;font-size:.9rem;padding:.4rem .9rem;border:1px solid var(--border);border-radius:999px;background:var(--card-bg)}
+  section{max-width:760px;margin:0 auto;padding:2.25rem 1.25rem}
+  section h2{font-size:1.6rem;margin:0 0 .5rem}
+  .lead{color:var(--text-soft);margin:0 0 1.25rem}
+  .card{background:var(--card-bg);border:1px solid var(--border);border-radius:18px;padding:1.25rem 1.5rem;margin-bottom:1rem}
+  .card p{margin:0}
+  .group{margin:1.75rem 0 .6rem;font-size:1.1rem;color:var(--accent-2)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.9rem}
+  .skill{background:var(--card-bg);border:1px solid var(--border);border-radius:18px;padding:1.1rem 1.2rem}
+  .skill .ico{font-size:1.7rem}
+  .skill h3{margin:.3rem 0 .25rem;font-size:1.05rem}
+  .skill p{margin:0;font-size:.92rem;color:var(--text-soft)}
+  .tag{display:inline-block;background:var(--bg-alt);border:1px solid var(--border);padding:.4rem .9rem;border-radius:999px;font-size:.9rem;margin:.2rem .3rem .2rem 0;font-weight:600}
+  .goal{border-left:5px solid var(--accent-3)}
+  footer{text-align:center;padding:2rem 1rem calc(2rem + env(safe-area-inset-bottom,0px));color:var(--text-soft);font-size:.85rem}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Oi, eu sou a Dhandara! 🌻</h1>
+  <p class="tagline">Sou de Oxum e Ogum. Estou construindo, em 5 meses, uma jornada entre tecnologia, cultura, sabores e raízes.</p>
+  <nav>
+    <a href="#jornada">Minha jornada</a>
+    <a href="#fe">Minha fé</a>
+    <a href="#sonho">Meu sonho</a>
+  </nav>
+</header>
+
+<section id="jornada">
+  <h2>Minha jornada de 5 meses 🚀</h2>
+  <p class="lead">São 9 habilidades que eu já comecei a explorar e quero conquistar nos próximos meses.</p>
+
+  <h3 class="group">⚡ Tecnologia</h3>
+  <div class="grid">
+    <div class="skill"><div class="ico">🔌</div><h3>Eletrônica</h3><p>Entender circuitos, componentes e como as coisas funcionam por dentro.</p></div>
+    <div class="skill"><div class="ico">🧩</div><h3>Pensamento computacional</h3><p>Resolver problemas dividindo em partes, achando padrões e criando passo a passo.</p></div>
+    <div class="skill"><div class="ico">🤖</div><h3>Robótica</h3><p>Dar movimento e decisões às minhas ideias com sensores e motores.</p></div>
+    <div class="skill"><div class="ico">💻</div><h3>Programação</h3><p>Escrever código para criar sites, jogos e projetos meus.</p></div>
+  </div>
+
+  <h3 class="group">🛠️ Culturas que me inspiram</h3>
+  <div class="grid">
+    <div class="skill"><div class="ico">🕶️</div><h3>Cultura hacker</h3><p>Curiosidade, aprender fuçando e compartilhar conhecimento de forma ética.</p></div>
+    <div class="skill"><div class="ico">🔧</div><h3>Cultura maker</h3><p>Aprender fazendo: construir, consertar e reinventar com as próprias mãos.</p></div>
+  </div>
+
+  <h3 class="group">🌎 Idioma e sabores</h3>
+  <div class="grid">
+    <div class="skill"><div class="ico">🗣️</div><h3>Espanhol</h3><p>Aprender uma nova língua para me conectar com mais gente e culturas.</p></div>
+    <div class="skill"><div class="ico">🍳</div><h3>Gastronomia</h3><p>Me formar na área: cozinhar é amor, ciência e arte juntos.</p></div>
+  </div>
+
+  <h3 class="group">🌊 Raízes</h3>
+  <div class="card goal">
+    <p>Minha trajetória nessa religião de matriz africana começou desde muito cedo, pois cresci dentro de um terreiro e sempre tive muito amor e carinho pela minha religião. Sou muito grata por tudo que me ensinaram e pelo que me aconselham. Nunca foi fácil, pois envolve muita dedicação, estudos e aprendizados, mas cada etapa me fez crescer e reconhecer que isso é o que eu quero seguir. Hoje tenho orgulho da minha trajetória e sou grata pelo que minha religião me ensina e representa na minha vida.</p>
+  </div>
+</section>
+
+<section id="fe">
+  <h2>Minha fé 🌊⚔️</h2>
+  <div class="card">
+    <p>Sou de Oxum e Ogum — eles são meus pais de cabeça. As religiões de matriz africana, como o Candomblé e a Umbanda, fazem parte de quem eu sou. Oxum representa o amor, a doçura e as águas doces; Ogum representa a força, a coragem e a luta pela justiça. Carregar os dois me ensina a ser gentil sem deixar de ser forte.</p>
+  </div>
+  <div class="card">
+    <p>Infelizmente, essas religiões ainda sofrem muito preconceito e desinformação. Elas não têm nada a ver com o que muita gente imagina por aí — são religiões de amor, ancestralidade, respeito à natureza e à comunidade. Fazem parte da cultura e da história do Brasil, e merecem ser respeitadas como qualquer outra fé.</p>
+    <div style="margin-top:.8rem">
+      <span class="tag">Oxum</span><span class="tag">Ogum</span><span class="tag">Ancestralidade</span><span class="tag">Respeito</span>
+    </div>
+  </div>
+</section>
+
+<section id="sonho">
+  <h2>Meu sonho 🍽️</h2>
+  <div class="card goal">
+    <p>Eu amo gastronomia e quero me formar nela. Aprender a cozinhar com conhecimento e carinho é um dos meus maiores sonhos.</p>
+    <p style="margin-top:.8rem">Sempre gostei de aprender e descobrir coisas novas, e acredito que a gastronomia pode me proporcionar muitas oportunidades. Sei que essa caminhada vai exigir dedicação, estudos e esforço, mas quero seguir em frente, aprender cada vez mais e conquistar meu espaço profissional nessa área.</p>
+  </div>
+</section>
+
+<footer>Feito com carinho por Dhandara 🌻</footer>
+
+</body>
+</html>
